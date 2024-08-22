@@ -8,7 +8,7 @@ defmodule ZIPCodes.MixProject do
     [
       app: :zip_codes,
       version: @version,
-      elixir: "~> 1.17",
+      elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       aliases: aliases(),
@@ -19,7 +19,7 @@ defmodule ZIPCodes.MixProject do
 
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :runtime_tools, :observer, :wx],
       mod: {ZIPCodes.Application, []}
     ]
   end
