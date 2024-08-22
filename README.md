@@ -1,4 +1,5 @@
-# ZIPCodes
+# ZIPCodes [![Hex.pm](https://img.shields.io/hexpm/v/zip_codes?style=flat-square)](https://hex.pm/packages/zip_codes) [![Hexdocs.pm](https://img.shields.io/badge/hex.pm-docs-blue?style=flat)](https://hexdocs.pm/zip_codes)
+
 
 Look up the latitude and longitude of a ZIP code.
 
