@@ -1,7 +1,7 @@
 defmodule ZIPCodes.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @github_url "https://github.com/bjyoungblood/zip_codes"
 
   def project do
@@ -19,7 +19,7 @@ defmodule ZIPCodes.MixProject do
 
   def application do
     [
-      extra_applications: [:logger, :runtime_tools, :observer, :wx],
+      extra_applications: [],
       mod: {ZIPCodes.Application, []}
     ]
   end
