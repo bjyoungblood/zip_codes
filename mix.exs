@@ -1,7 +1,7 @@
 defmodule ZIPCodes.MixProject do
   use Mix.Project
 
-  @version "0.1.1"
+  @version "0.2.0"
   @github_url "https://github.com/bjyoungblood/zip_codes"
 
   def project do
@@ -40,7 +40,7 @@ defmodule ZIPCodes.MixProject do
   defp docs do
     [
       main: "ZIPCodes",
-      extras: ["README.md"],
+      extras: ["README.md", "CHANGELOG.md"],
       source_ref: "v#{@version}",
       source_url: @github_url
     ]
