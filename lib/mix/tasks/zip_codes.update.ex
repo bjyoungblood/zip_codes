@@ -10,7 +10,7 @@ if Mix.env() == :dev do
     def run(_) do
       table = :ets.new(:zip_codes, [:ordered_set])
 
-      File.stream!("resources/2023_Gaz_zcta_national.txt", :line)
+      File.stream!("resources/2024_Gaz_zcta_national.txt", :line)
       |> Stream.map(&String.trim/1)
       |> __MODULE__.CSV.parse_stream()
       |> Stream.each(fn [zip, _, _, _, _, lat, long] ->
